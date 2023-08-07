@@ -4,6 +4,9 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Application.Interfaces;
+using Application.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,7 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("AssignmentConnection")));//For connection
-
+builder.Services.AddScoped<IProduct, ProductService>();
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSwaggerGen(options =>

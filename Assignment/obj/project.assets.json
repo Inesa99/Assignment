@@ -1454,6 +1454,24 @@
           }
         }
       },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Common": "1.0.0",
+          "Data": "1.0.0",
+          "EntityFramework": "6.4.4",
+          "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
       "Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -4574,6 +4592,11 @@
         "version.txt"
       ]
     },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
     "Common/1.0.0": {
       "type": "project",
       "path": "../Common/Common.csproj",
@@ -4587,6 +4610,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Application >= 1.0.0",
       "BCrypt.Net-Next >= 4.0.3",
       "Common >= 1.0.0",
       "Data >= 1.0.0",
@@ -4603,23 +4627,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Assignment\\Assignment.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Assignment\\Assignment\\Assignment.csproj",
       "projectName": "Assignment",
-      "projectPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Assignment\\Assignment.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Assignment\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Assignment\\Assignment\\Assignment.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Assignment\\Assignment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4628,19 +4652,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Common\\Common.csproj"
+            "C:\\Users\\Admin\\Desktop\\Assignment\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Assignment\\Application\\Application.csproj"
             },
-            "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Data\\Data.csproj"
+            "C:\\Users\\Admin\\Desktop\\Assignment\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Assignment\\Common\\Common.csproj"
+            },
+            "C:\\Users\\Admin\\Desktop\\Assignment\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Assignment\\Data\\Data.csproj"
             }
           }
         }
@@ -4721,7 +4747,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   },
