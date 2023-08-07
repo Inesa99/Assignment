@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Common.ViewModels;
 using Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,22 +28,40 @@ namespace Application.Services
             throw new NotImplementedException();
         }
 
-        public List<ProductListViewModel> ProductList()
+        public async Task<List<ProductListViewModel>> ProductList()
         {
-            List<ProductListViewModel> products = _context.Products
+            List<ProductListViewModel> products = await _context.Products
                 .Select(p => new ProductListViewModel
                 {
                     Id = p.Id,
                     Name = p.Name,
                     Available = p.Available,
                     Price = p.Price,
-                }).ToList();
+                }).ToListAsync();
             return products;
         }
 
         public Task<bool> Delete(AddProductViewModel product)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<ProductInfoViewModel> GetProductById(int id)
+        {
+            var result = await _context.Products
+            .Select(p => new ProductInfoViewModel
+            {
+                    Id = p.Id,
+                    Name = p.Name,
+                    Available = p.Available,
+                    Price = p.Price,
+                    Description = p.Description,
+                    DateCreated = p.DateCreated
+            }).FirstOrDefaultAsync(p => p.Id == id);
+
+            if (result == null) throw new ArgumentException();
+
+            return result;
         }
     }
 }

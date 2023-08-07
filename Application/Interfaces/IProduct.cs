@@ -12,7 +12,8 @@ namespace Application.Interfaces
         public Task<bool> Add(AddProductViewModel product);
         public Task<bool> Delete(AddProductViewModel product);
         public Task<bool> Update(EditProductViewModel product);
-        public List<ProductListViewModel> ProductList();
+        public Task<ProductInfoViewModel> GetProductById(int id);
+        public Task<List<ProductListViewModel>> ProductList();
 
     }
 }
