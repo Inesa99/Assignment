@@ -17,11 +17,26 @@ namespace Assignment.Controllers
             _productService = productService;
         }
 
-        [HttpGet(Name = "Get Product List"),AllowAnonymous]
-        public ActionResult<IEnumerable<ProductListViewModel>> GetProductList()
+        [HttpGet(Name = "Get Product List"), AllowAnonymous]
+        public async Task<ActionResult<IEnumerable<ProductListViewModel>>> GetProductList()
         {
-            List<ProductListViewModel> products = _productService.ProductList();
+            List<ProductListViewModel> products = await _productService.ProductList();
+            if (products == null) return Ok("You haven't Products!!!");
             return Ok(products);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProductById(int id)
+        {
+            try
+            {
+                ProductInfoViewModel product = await _productService.GetProductById(id);
+                return Ok(product);
+            }
+            catch(ArgumentException)
+            {
+                return BadRequest();
+            }
         }
 
     }
