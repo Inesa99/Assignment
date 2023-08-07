@@ -29,7 +29,15 @@ namespace Application.Services
 
         public List<ProductListViewModel> ProductList()
         {
-            throw new NotImplementedException();
+            List<ProductListViewModel> products = _context.Products
+                .Select(p => new ProductListViewModel
+                {
+                    Id = p.Id,
+                    Name = p.Name,
+                    Available = p.Available,
+                    Price = p.Price,
+                }).ToList();
+            return products;
         }
 
         public Task<bool> Delete(AddProductViewModel product)
