@@ -38,6 +38,12 @@ namespace Assignment.Controllers
                 return BadRequest();
             }
         }
+        [HttpPost]
+        public async Task<IActionResult> AddProduct(AddProductViewModel product)
+        {
+            if(await _productService.AddProduct(product)) return Ok();
+            return BadRequest();
+        }
 
     }
 }
