@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Assignment\\Assignment.csproj": {}
+    "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Assignment\\Assignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Assignment\\Assignment.csproj": {
+    "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Assignment\\Assignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Assignment\\Assignment.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Assignment\\Assignment.csproj",
         "projectName": "Assignment",
-        "projectPath": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Assignment\\Assignment.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Assignment\\Assignment.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Assignment\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Assignment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -34,11 +34,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Common\\Common.csproj"
+              "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Common\\Common.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Data\\Data.csproj"
+              "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Data\\Data.csproj"
               }
             }
           }
@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.2, )"
@@ -64,6 +68,20 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
@@ -105,14 +123,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Common\\Common.csproj": {
+    "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Common\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -145,6 +163,30 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -165,14 +207,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Data\\Data.csproj": {
+    "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Վերջնական\\Assignment\\Data\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Technamin\\Assignment\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -205,6 +247,30 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
