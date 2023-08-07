@@ -18,9 +18,20 @@ namespace Application.Services
         {
             _context = context;
         }
-        public async Task<bool> Add(AddProductViewModel product)
+        public async Task<bool> AddProduct(AddProductViewModel product)
         {
-            throw new NotImplementedException();
+            if (_context.Products.Select(p => p.Name).Contains(product.Name)) return false;
+            Product newProduct = new Product
+            {
+                Name = product.Name,
+                Available = product.Available,
+                Price = product.Price,
+                Description = product.Description,
+                DateCreated = DateTime.Now
+            };
+            await _context.Products.AddAsync(newProduct);
+            int result = await _context.SaveChangesAsync();
+            return result > 0;
         }
 
         public async Task<bool> Update(EditProductViewModel product)
