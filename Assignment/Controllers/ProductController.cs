@@ -44,6 +44,12 @@ namespace Assignment.Controllers
             if(await _productService.AddProduct(product)) return Ok();
             return BadRequest();
         }
+        [HttpPut,Authorize]
+        public async Task<IActionResult> UpdateProduct(UpdateProductViewModel product)
+        {
+            if (await _productService.UpdateProducrt(product)) return Ok();
+            return BadRequest();
+        }
 
     }
 }

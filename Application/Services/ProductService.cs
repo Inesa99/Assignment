@@ -25,18 +25,28 @@ namespace Application.Services
             {
                 Name = product.Name,
                 Available = product.Available,
-                Price = product.Price,
+                Price = product.Price > 0 ? product.Price : 0,//price cant be negative
                 Description = product.Description,
                 DateCreated = DateTime.Now
             };
             await _context.Products.AddAsync(newProduct);
-            int result = await _context.SaveChangesAsync();
-            return result > 0;
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task<bool> Update(EditProductViewModel product)
+        public async Task<bool> UpdateProducrt(UpdateProductViewModel product)
         {
-            throw new NotImplementedException();
+            Product changedProduct = _context.Products
+                .Where(p => p.Id == product.Id).First();
+            if (changedProduct == null) return false;
+            if (changedProduct.Name != product.Name) {//If user wont to change name of product
+                if (_context.Products.Select(p => p.Name).Contains(product.Name)) return false;//product name is unique
+            }
+            changedProduct.Name = product.Name;
+            changedProduct.Available = product.Available;
+            changedProduct.Price = product.Price > 0 ? product.Price : 0;//price cant be negative
+            changedProduct.Description = product.Description;
+            await _context.SaveChangesAsync();
+            return true;
         }
 
         public async Task<List<ProductListViewModel>> ProductList()

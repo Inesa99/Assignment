@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.ViewModels
 {
-    public class EditProductViewModel
+    public class UpdateProductViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
