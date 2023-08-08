@@ -35,11 +35,11 @@ namespace Application.Services
 
         public async Task<bool> UpdateProducrt(UpdateProductViewModel product)
         {
-            Product changedProduct = await _context.Products
+            Product? changedProduct = await _context.Products
                 .Where(p => p.Id == product.Id).FirstOrDefaultAsync();
             if (changedProduct == null) return false;
-            if (changedProduct.Name != product.Name) {//If user wont to change name of product
-                if (_context.Products.Select(p => p.Name).Contains(product.Name)) return false;//product name is unique
+            if (changedProduct.Name != product.Name) {
+                if (_context.Products.Select(p => p.Name).Contains(product.Name)) return false;
             }
             changedProduct.Name = product.Name;
             changedProduct.Available = product.Available;
@@ -64,7 +64,7 @@ namespace Application.Services
 
         public async Task<bool> DeleteProduct(int id)
         {
-            Product product = await _context.Products.FirstOrDefaultAsync(Product => Product.Id == id);
+            Product? product = await _context.Products.FirstOrDefaultAsync(Product => Product.Id == id);
             if (product == null) throw new ArgumentException();
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
