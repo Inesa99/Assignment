@@ -35,8 +35,8 @@ namespace Application.Services
 
         public async Task<bool> UpdateProducrt(UpdateProductViewModel product)
         {
-            Product changedProduct = _context.Products
-                .Where(p => p.Id == product.Id).First();
+            Product changedProduct = await _context.Products
+                .Where(p => p.Id == product.Id).FirstOrDefaultAsync();
             if (changedProduct == null) return false;
             if (changedProduct.Name != product.Name) {//If user wont to change name of product
                 if (_context.Products.Select(p => p.Name).Contains(product.Name)) return false;//product name is unique
@@ -62,9 +62,13 @@ namespace Application.Services
             return products;
         }
 
-        public Task<bool> Delete(AddProductViewModel product)
+        public async Task<bool> DeleteProduct(int id)
         {
-            throw new NotImplementedException();
+            Product product = await _context.Products.FirstOrDefaultAsync(Product => Product.Id == id);
+            if (product == null) throw new ArgumentException();
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
         public async Task<ProductInfoViewModel> GetProductById(int id)
