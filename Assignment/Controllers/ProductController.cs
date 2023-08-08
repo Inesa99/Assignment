@@ -25,7 +25,7 @@ namespace Assignment.Controllers
             return Ok(products);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}"), AllowAnonymous]
         public async Task<IActionResult> GetProductById(int id)
         {
             try
@@ -38,7 +38,7 @@ namespace Assignment.Controllers
                 return BadRequest();
             }
         }
-        [HttpPost]
+        [HttpPost, Authorize]
         public async Task<IActionResult> AddProduct(AddProductViewModel product)
         {
             if(await _productService.AddProduct(product)) return Ok();
