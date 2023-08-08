@@ -38,19 +38,19 @@ namespace Assignment.Controllers
                 return BadRequest();
             }
         }
-        [HttpPost, Authorize]
+        [HttpPost, Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddProduct(AddProductViewModel product)
         {
             if(await _productService.AddProduct(product)) return Ok();
             return BadRequest();
         }
-        [HttpPut,Authorize]
+        [HttpPut,Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateProduct(UpdateProductViewModel product)
         {
             if (await _productService.UpdateProducrt(product)) return Ok();
             return BadRequest();
         }
-        [HttpDelete, Authorize]
+        [HttpDelete, Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteProduct(int id) {
             if (await _productService.DeleteProduct(id)) return Ok();
             return BadRequest();

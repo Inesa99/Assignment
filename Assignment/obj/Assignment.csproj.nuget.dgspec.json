@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Assignment\\Assignment\\Assignment.csproj": {}
+    "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Assignment\\Assignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Assignment\\Application\\Application.csproj": {
+    "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Assignment\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Assignment\\Application\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Assignment\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Common\\Common.csproj"
+              "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Common\\Common.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Assignment\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Data\\Data.csproj"
+              "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Data\\Data.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Assignment\\Assignment\\Assignment.csproj": {
+    "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Assignment\\Assignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Assignment\\Assignment\\Assignment.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Assignment\\Assignment.csproj",
         "projectName": "Assignment",
-        "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Assignment\\Assignment.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Assignment\\Assignment.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Assignment\\Assignment\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Assignment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -125,14 +125,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Assignment\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Application\\Application.csproj"
+              "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Application\\Application.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Assignment\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Common\\Common.csproj"
+              "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Common\\Common.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Assignment\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Data\\Data.csproj"
+              "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Data\\Data.csproj"
               }
             }
           }
@@ -217,14 +217,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Assignment\\Common\\Common.csproj": {
+    "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Assignment\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Assignment\\Common\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -301,14 +301,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Assignment\\Data\\Data.csproj": {
+    "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Assignment\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Assignment\\Data\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\New folder\\Assignment\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
