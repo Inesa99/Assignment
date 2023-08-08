@@ -17,7 +17,7 @@ namespace Assignment.Controllers
             _productService = productService;
         }
 
-        [HttpGet(Name = "Get Product List"), AllowAnonymous]
+        [HttpGet, AllowAnonymous]
         public async Task<ActionResult<IEnumerable<ProductListViewModel>>> GetProductList()
         {
             List<ProductListViewModel> products = await _productService.ProductList();
@@ -50,6 +50,10 @@ namespace Assignment.Controllers
             if (await _productService.UpdateProducrt(product)) return Ok();
             return BadRequest();
         }
-
+        [HttpDelete, Authorize]
+        public async Task<IActionResult> DeleteProduct(int id) {
+            if (await _productService.DeleteProduct(id)) return Ok();
+            return BadRequest();
+        }
     }
 }
